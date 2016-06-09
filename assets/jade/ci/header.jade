@@ -1,1 +1,7 @@
 include layout.jade
+.banner
+	.container
+		img(src="assets/image/banner_top.jpg")
+		ul.list-unsyte.list-inline
+			each val in ["LIBERO.PE", "ELPOPULAR.PE", "FUNDACIÓN GUSTAVO MOHME LLONA"]
+				li= val
