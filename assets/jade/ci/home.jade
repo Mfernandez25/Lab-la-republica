@@ -1,2 +1,15 @@
 include layout.jade
-	h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+include mixin.jade
+.titulo
+	strong
+		h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA	
+block social bar
+	+social_bar('Hace 12 minutos','POLÍTICA')
+.row
+	.col-md-6
+		img.img-responsive(src='assets/image/img_grid_principal.jpg')
+			a(href='#')
+	.col-md-6
+		img.img-responsive(src='assets/image/img_grid_secundario.jpg')
+		img.img-responsive(src='assets/image/img_grid_principal.jpg')		
+
