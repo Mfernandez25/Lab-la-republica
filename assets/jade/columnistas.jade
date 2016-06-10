@@ -1,1 +1,15 @@
-include ci/layout.jade
+html
+	head
+		include ./ci/links.jade
+		include ./ci/mixin.jade
+	body
+		.container
+			mixin titulares('Columnistas', 'LO ULTIMO EN COLUMNISTAS')
+			.row
+				mixin allBlogeros
+				mixin allBlogeros
+				mixin allBlogeros
+				mixin allBlogeros
+				mixin allBlogeros
+				mixin allBlogeros
+				mixin allBlogeros

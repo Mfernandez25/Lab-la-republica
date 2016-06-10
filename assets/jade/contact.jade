@@ -1,1 +1,34 @@
-include ci/layout.jade
+html
+	head
+		include ./ci/links.jade
+		include ./ci/mixin.jade
+	body
+		.container
+			.contacto
+				strong
+					h1 Contáctese con nosotros
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate mollitia eum, sunt rem. Laboriosam libero molestias architecto at, vitae culpa doloribus commodi earum excepturi quidem repellendus rem eius, eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque placeat, autem nostrum incidunt sit quam nulla similique dicta expedita quaerat perferendis! Quis excepturi culpa pariatur sit, libero, fugiat qui.
+			+datos('Nombre y apellidos completos')
+			+datos('Correo electronico')
+			+datos('Telefono')
+			small (Opcional)
+			h5 Elija un destinatario
+			+opciones('my-list', 'Sugerencia para el sitio webs', 'Direccion periodistica', 'Direccion comercial', 'Cartas al director' ,'Promociones y productos del diario' ,'Archivo periodistico')
+			.col-md-6
+				ul.text-right
+					each val in ["Ej:funcionamieno y mejoras del sitio", "Ej:Sugerencia para la nota de prensa", "Ej:Publicidad en los diarios y sitios webs", "Ej:Denuncias comentarios e impresiones", "Ej:Promociones, tables,etc", "Ej:Ediciones  imprensas/fotos"]
+						li.list-inline=val
+			.row
+				input(type="text" placeholder="Mensaje")
+			.row
+				button ENVIAR
+
+
+
+
+
+
+
+
+
+

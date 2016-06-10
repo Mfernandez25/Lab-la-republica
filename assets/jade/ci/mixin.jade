@@ -1,3 +1,66 @@
 //- MERLE
 //- SHEY SHEY
+
 //- ROSARIO
+
+//- MIXIN PARA ENCABEZADOS
+mixin titulares(titulo, subtitulo)
+	strong
+		h1 #{titulo}
+	p.p-azul #{subtitulo}
+		i.i-blog.fa.fa-angle-double-down
+//- -------------------------MIXIN PARA CONTACTO
+mixin datos(datos_generales)
+	input(placeholder="#{datos_generales}") 
+	br
+//- mixin para inputs
+mixin list(id, ...items)
+	ul(id=id)
+		each item in items
+			li= item
+//- mixin para 
+mixin opciones(id, ...items)
+	form.col-md-6.radio.mg-c(id=id)
+		each item in items
+			input(type='radio')
+			p= item
+//- mixin para lista de inputs tipo radio
+
+//- --------------------------MIXIN PARA BLOGS
+
+mixin blogeros(frase, letra , foto)
+	.blog.col-md-4.text-center
+		.text
+			small Lunes, 14 de Julio de 2015
+			strong.arriba
+				h3 #{frase}
+		.foto.text-left
+			img.borde.pull-left(src='#{foto}')
+			strong
+				p BLOG
+			p #{letra}
+mixin allBlogeros
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/blog_avatar_01.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_02.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_03.jpg')
+
+//- --------------------------MIXIN PARA COLUMNISTAS
+
+mixin columnistas(frase, letra , foto)
+	.blog.col-md-4.text-center
+		.text
+			small Lunes, 14 de Julio de 2015
+			strong.arriba
+				h3 #{frase}
+		.foto.text-left
+			img.borde.pull-left(src='#{foto}')
+			strong
+				p BLOG
+			p #{letra}
+mixin allColumnistas
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/blog_avatar_01.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_02.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_03.jpg')
+
+
+

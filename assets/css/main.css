@@ -1,0 +1,47 @@
+.i-blog {
+  color: #B20000;
+  margin: 1%;
+}
+
+.p-azul {
+  color: #687888;
+}
+
+.blog {
+  padding: 1%;
+  outline: 2px solid #F2F2F2;
+  outline-offset: -5px;
+}
+
+.blog .text {
+  height: 100px;
+}
+
+.blog .arriba {
+  vertical-align: top;
+}
+
+.blog .foto {
+  width: 100%;
+  padding: 5% 2%;
+  background: #F2F2F2;
+  vertical-align: top;
+}
+
+.blog .foto img {
+  border: 2px solid #fff;
+  margin: 0 3%;
+}
+
+.blog .foto p:nth-child(3) {
+  color: #687888;
+}
+
+.blog .bord {
+  borde: 2px solid #fff;
+  margin-right: 3%;
+}
+
+.mg-c {
+  margin: 0;
+}
