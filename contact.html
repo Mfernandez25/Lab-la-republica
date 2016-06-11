@@ -22,43 +22,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="contacto"><strong>
-          <h1>Contáctese con nosotros</h1></strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate mollitia eum, sunt rem. Laboriosam libero molestias architecto at, vitae culpa doloribus commodi earum excepturi quidem repellendus rem eius, eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque placeat, autem nostrum incidunt sit quam nulla similique dicta expedita quaerat perferendis! Quis excepturi culpa pariatur sit, libero, fugiat qui.</p>
-      </div>
-          <input placeholder="Nombre y apellidos completos"/><br/>
-          <input placeholder="Correo electronico"/><br/>
-          <input placeholder="Telefono"/><br/><small>(Opcional)</small>
-      <h5>Elija un destinatario</h5>
-          <form id="my-list" class="col-md-6 radio mg-c">
-            <input type="radio"/>
-            <p>Sugerencia para el sitio webs</p>
-            <input type="radio"/>
-            <p>Direccion periodistica</p>
-            <input type="radio"/>
-            <p>Direccion comercial</p>
-            <input type="radio"/>
-            <p>Cartas al director</p>
-            <input type="radio"/>
-            <p>Promociones y productos del diario</p>
-            <input type="radio"/>
-            <p>Archivo periodistico</p>
-          </form>
-      <div class="col-md-6">
-        <ul class="text-right">
-          <li class="list-inline">Ej:funcionamieno y mejoras del sitio</li>
-          <li class="list-inline">Ej:Sugerencia para la nota de prensa</li>
-          <li class="list-inline">Ej:Publicidad en los diarios y sitios webs</li>
-          <li class="list-inline">Ej:Denuncias comentarios e impresiones</li>
-          <li class="list-inline">Ej:Promociones, tables,etc</li>
-          <li class="list-inline">Ej:Ediciones  imprensas/fotos</li>
-        </ul>
+      <div class="row">
+        <div class="contacto"><strong class="text-center">
+            <h1>Contáctese con nosotros</h1></strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptate mollitia eum, sunt rem. Laboriosam libero molestias architecto at, vitae culpa doloribus commodi earum excepturi quidem repellendus rem eius, eaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque placeat, autem nostrum incidunt sit quam nulla similique dicta expedita quaerat perferendis! Quis excepturi culpa pariatur sit, libero, fugiat qui.</p><br/>
+        </div>
       </div>
       <div class="row">
-        <input type="text" placeholder="Mensaje"/>
-      </div>
-      <div class="row">
-        <button>ENVIAR</button>
+        <div class="bloque-input text-center">
+              <input placeholder="Nombre y apellidos completos" class="input-plomo"/><br/>
+              <input placeholder="Correo electronico" class="input-plomo"/><br/>
+              <input placeholder="Telefono" class="input-plomo"/><br/>
+        </div>
+        <div class="bloque-texto"><small>(Opcional)</small><strong>
+            <h5>Elija un destinatario</h5></strong>
+              <form class="col-sm-6 radio mg-c">
+                <input type="radio" class="mg-b"/>
+                <p>Sugerencia para el sitio webs</p>
+                <input type="radio" class="mg-b"/>
+                <p>Direccion periodistica</p>
+                <input type="radio" class="mg-b"/>
+                <p>Direccion comercial</p>
+                <input type="radio" class="mg-b"/>
+                <p>Cartas al director</p>
+                <input type="radio" class="mg-b"/>
+                <p>Promociones y productos del diario</p>
+                <input type="radio" class="mg-b"/>
+                <p>Archivo periodistico</p>
+              </form>
+              <ul class="col-sm-6 text-right pd-c">
+                <li class="list-inline mg-b">(Ej:funcionamieno y mejoras del sitio)</li>
+                <li class="list-inline mg-b">(Ej:Sugerencia para la nota de prensa)</li>
+                <li class="list-inline mg-b">(Ej:Publicidad en los diarios y sitios webs)</li>
+                <li class="list-inline mg-b">(Ej:Denuncias comentarios e impresiones)</li>
+                <li class="list-inline mg-b">(Ej:Promociones, tables,etc</li>
+                <li class="list-inline mg-b">(Ej:Ediciones  imprensas/fotos)</li>
+              </ul>
+        </div>
+        <div class="bloque-mensaje text-center">
+          <textarea type="text" placeholder="Mensaje" class="input-mensaje mg-b"></textarea><br/><img src="./assets/image/contacto_submit_btn.jpg" class="mg-b"/>
+        </div>
       </div>
     </div>
   </body>

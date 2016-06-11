@@ -11,15 +11,19 @@ mixin titulares(titulo, subtitulo)
 		i.i-blog.fa.fa-angle-double-down
 //- -------------------------MIXIN PARA CONTACTO
 mixin datos(datos_generales)
-	input(placeholder="#{datos_generales}") 
+	input.input-plomo(placeholder="#{datos_generales}") 
 	br
 //- mixin para inputs
  
-mixin opciones(id, ...items)
-	form.col-md-6.radio.mg-c(id=id)
+mixin opciones(...items)
+	form.col-sm-6.radio.mg-c
 		each item in items
-			input(type='radio')
+			input.mg-b(type='radio')
 			p= item
+mixin letras(...items)
+	ul.col-sm-6.text-right.pd-c
+		each item in items
+			li.list-inline.mg-b= item		
 //- mixin para lista de inputs tipo radio
 
 //- --------------------------MIXIN PARA BLOGS
@@ -55,21 +59,22 @@ mixin allColumnistas
 mixin menu-columnistas(...items)
 	div.menu-rojo
 		each item in items
-			button.btn-danger= item
+			button.btn-rojo.btn-danger= item
 
-mixin personas_blog(foto, letra)
+mixin personas_columna(foto, letra)
 	.col-md-3
 		.foto.text-left.mg-t
 			img.pull-left(src='#{foto}')
 			strong
 				p BLOG
 			p #{letra}
-mixin allPersonas_blog
-	mixin personas_blog('./assets/image/aside-perfil-img-01.jpg', 'Rosario Calle')
-	mixin personas_blog('./assets/image/aside-personaje-thumb-01.jpg', 'Rosario Calle')
-	mixin personas_blog('./assets/image/blog_avatar_01.jpg', 'Rosario Calle')				
-	mixin personas_blog('./assets/image/blog_avatar_02.jpg', 'Rosario Calle')
-	mixin personas_blog('./assets/image/fotogaleria_col01_01.jpg', 'Rosario Calle')
-	mixin personas_blog('./assets/image/img-columnistas.jpg', 'Rosario Calle')
-	mixin personas_blog('./assets/image/img_grid_principal.jpg', 'Rosario Calle')				
-	mixin personas_blog('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')
+
+mixin allPersonas_columna
+	mixin personas_columna('./assets/image/aside-perfil-img-01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/aside-personaje-thumb-01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/blog_avatar_01.jpg', 'Rosario Calle')				
+	mixin personas_columna('./assets/image/blog_avatar_02.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/fotogaleria_col01_01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/img-columnistas.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/img_grid_principal.jpg', 'Rosario Calle')				
+	mixin personas_columna('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')

@@ -7,6 +7,10 @@
   margin: 3% 3% 3% 0;
 }
 
+.pd-c {
+  padding: 0;
+}
+
 .i-blog {
   color: #B20000;
   margin: 1%;
@@ -14,6 +18,30 @@
 
 .p-azul {
   color: #687888;
+}
+
+.mg-b {
+  margin-bottom: 3.1%;
+}
+
+/*MIXIN SASS PARA SECCION CONTACTO*/
+.input-plomo {
+  width: 650px;
+  background: #F2F2F2;
+  margin: 1%;
+}
+
+.input-mensaje {
+  width: 650px;
+  background: #F2F2F2;
+  height: 100px;
+  border-style: inset;
+  border-width: 2px;
+  border-color: initial;
+}
+
+.bloque-texto {
+  padding: 0 22.5%;
 }
 
 /*MIXIN SASS PARA SECCION BLOG*/
@@ -56,7 +84,9 @@
   width: 100%;
 }
 
-.menu-rojo button {
+.btn-rojo {
   margin: 1%;
   padding: 0 2%;
+  background: #B20000;
+  border: none;
 }
