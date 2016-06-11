@@ -15,7 +15,18 @@ mixin social_bar(texto,tema,imagen)
 				p= tema
 			li
 				img(src= imagen)
-			
 
+mixin grid_main(imagen,texto,formato)
+	.about_grid
+		img(src=imagen)
+		a(href='#')
+			h4=texto
+		h4=formato
 
-//- ROSARIO
+mixin columnista(imagen,nombre,titulo)
+	.img-thumbnail
+		img(src=imagen)
+		.caption
+			p=nombre
+			h4=titulo
+//- //- ROSARIO

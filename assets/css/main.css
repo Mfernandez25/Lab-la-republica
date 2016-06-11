@@ -1,3 +1,25 @@
 .banner {
   background-color: #F2F2F2;
 }
+
+.columnistas {
+  border-top: 5px solid #B20000;
+}
+
+.columnistas h4.titulo {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  top: -20px;
+  font-size: 28px;
+  padding: 10px;
+  display: inline-block;
+  background-color: #B20000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.columnistas h4.titulo a {
+  color: #fff;
+  padding: 10px;
+}

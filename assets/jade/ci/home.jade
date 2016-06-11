@@ -3,13 +3,28 @@ include mixin.jade
 .titulo
 	strong
 		h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA	
-block social bar
-	+social_bar('Hace 12 minutos','POLÍTICA')
+block hero_section
+	center
+		+social_bar('Hace 12 minutos','POLÍTICA')
 .row
 	.col-md-6
-		img.img-responsive(src='assets/image/img_grid_principal.jpg')
-			a(href='#')
+		+grid_main('assets/image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral,')
 	.col-md-6
-		img.img-responsive(src='assets/image/img_grid_secundario.jpg')
-		img.img-responsive(src='assets/image/img_grid_principal.jpg')		
+		+grid_main('assets/image/img_grid_secundario.jpg','Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por $S/.3 000 millones,|FOTOS')
+		+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano,|VIDEO')
+block content
+.columnistas
+		h4.titulo
+				a(href='#')
+					span COLUMNISTAS
+.row
+	.col-md-12
+		.columlist
+			mixin columnista('assets/image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+			mixin columnista('assets/image/img_blogueros.jpg','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
+			mixin columnista('assets/image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+			mixin columnista('assets/image/img_blogueros.jpg','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
+			mixin columnista('assets/image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+			mixin columnista('assets/image/img_blogueros.jpg','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
+
 
