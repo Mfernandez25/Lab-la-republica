@@ -6,10 +6,24 @@ html
 		.container
 			mixin titulares('Columnistas', 'LO ULTIMO EN COLUMNISTAS')
 			.row
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
+				mixin allColumnistas
+				mixin allColumnistas
+			.row.text-center
+				button.btn-danger Todas las columnas
+			.row
+				mixin titulares('','LO ULTIMO EN COLUMNITAS')
+			.row.text-center
+				mixin menu-columnistas('menu-top','TODOS', 'ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ')
+			.row
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+				mixin allPersonas_blog
+
+
+
+
+

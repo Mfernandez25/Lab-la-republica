@@ -14,11 +14,7 @@ mixin datos(datos_generales)
 	input(placeholder="#{datos_generales}") 
 	br
 //- mixin para inputs
-mixin list(id, ...items)
-	ul(id=id)
-		each item in items
-			li= item
-//- mixin para 
+ 
 mixin opciones(id, ...items)
 	form.col-md-6.radio.mg-c(id=id)
 		each item in items
@@ -35,32 +31,45 @@ mixin blogeros(frase, letra , foto)
 			strong.arriba
 				h3 #{frase}
 		.foto.text-left
-			img.borde.pull-left(src='#{foto}')
+			img.pull-left(src='#{foto}')
 			strong
 				p BLOG
 			p #{letra}
+
 mixin allBlogeros
 	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/blog_avatar_01.jpg')
 	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_02.jpg')
 	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_03.jpg')
 
 //- --------------------------MIXIN PARA COLUMNISTAS
+			
+mixin allColumnistas
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/img_author_columnista.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/aside-personaje-thumb-01.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/img-columnistas.jpg')
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/thumb-post-image.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_01.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_02.jpg')
 
-mixin columnistas(frase, letra , foto)
-	.blog.col-md-4.text-center
-		.text
-			small Lunes, 14 de Julio de 2015
-			strong.arriba
-				h3 #{frase}
-		.foto.text-left
-			img.borde.pull-left(src='#{foto}')
+
+mixin menu-columnistas(...items)
+	div.menu-rojo
+		each item in items
+			button.btn-danger= item
+
+mixin personas_blog(foto, letra)
+	.col-md-3
+		.foto.text-left.mg-t
+			img.pull-left(src='#{foto}')
 			strong
 				p BLOG
 			p #{letra}
-mixin allColumnistas
-	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/blog_avatar_01.jpg')
-	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_02.jpg')
-	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_03.jpg')
-
-
-
+mixin allPersonas_blog
+	mixin personas_blog('./assets/image/aside-perfil-img-01.jpg', 'Rosario Calle')
+	mixin personas_blog('./assets/image/aside-personaje-thumb-01.jpg', 'Rosario Calle')
+	mixin personas_blog('./assets/image/blog_avatar_01.jpg', 'Rosario Calle')				
+	mixin personas_blog('./assets/image/blog_avatar_02.jpg', 'Rosario Calle')
+	mixin personas_blog('./assets/image/fotogaleria_col01_01.jpg', 'Rosario Calle')
+	mixin personas_blog('./assets/image/img-columnistas.jpg', 'Rosario Calle')
+	mixin personas_blog('./assets/image/img_grid_principal.jpg', 'Rosario Calle')				
+	mixin personas_blog('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')

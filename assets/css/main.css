@@ -1,3 +1,12 @@
+/*CLASES ESPECIALES*/
+.mg-c {
+  margin: 0;
+}
+
+.mg-t {
+  margin: 3% 3% 3% 0;
+}
+
 .i-blog {
   color: #B20000;
   margin: 1%;
@@ -7,41 +16,47 @@
   color: #687888;
 }
 
+/*MIXIN SASS PARA SECCION BLOG*/
 .blog {
   padding: 1%;
   outline: 2px solid #F2F2F2;
   outline-offset: -5px;
 }
 
-.blog .text {
+.text {
   height: 100px;
 }
 
-.blog .arriba {
+.arriba {
   vertical-align: top;
 }
 
-.blog .foto {
+.foto {
   width: 100%;
   padding: 5% 2%;
   background: #F2F2F2;
   vertical-align: top;
 }
 
-.blog .foto img {
+.foto img {
   border: 2px solid #fff;
   margin: 0 3%;
+  height: 55px;
+  width: 55px;
 }
 
-.blog .foto p:nth-child(3) {
+.foto p:nth-child(3) {
   color: #687888;
 }
 
-.blog .bord {
-  borde: 2px solid #fff;
-  margin-right: 3%;
+/*MIXIN SASS PARA SECCION CULUMNISTAS*/
+.menu-rojo {
+  background: #B20000;
+  text-align: center;
+  width: 100%;
 }
 
-.mg-c {
-  margin: 0;
+.menu-rojo button {
+  margin: 1%;
+  padding: 0 2%;
 }
