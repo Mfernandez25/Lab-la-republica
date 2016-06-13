@@ -56,11 +56,11 @@ mixin last_news(titulo,formato,imagen,texto)
 			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
 mixin side_bar1(imagen, texto, formato)
 	.row
-		.col-md-4
+		.col-md-3
 			img(src=imagen)
-		.col-md-8
+		.col-md-9
 			a(href='')
-				h4=texto
+				h3=texto
 					span=formato
 mixin side_bar2(imagen,nombre,texto)
 	.row
