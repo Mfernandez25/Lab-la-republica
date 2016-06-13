@@ -27,7 +27,7 @@ block content
 			mixin columnista('assets/image/img_blogueros.jpg','Augusto Álvarez Rodrich','Respuesta a una derrota estridente')
 			ol.list-inline.list-unstyled.text-center.dots
 				li
-					a(href='#')
+					a(href='#' active)
 						i.fa.fa-circle
 				li
 					a(href='#')
@@ -43,9 +43,8 @@ block content
 block noticias
 .row
 	.col-md-8
-		h5 ULTIMAS NOTICIAS
-			img(src='assets/image/double-arrow-bottom.png')
-
+		+titulares('','ULTIMAS NOTICIAS')
+		
 		+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
 		+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
 		+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
@@ -140,8 +139,12 @@ block noticias
 				img.ref_img(src='assets/image/img_pregunta.png')
 				h4 La pregunta de hoy
 				p  ¿Cree usted que la premier Ana Jara debe renunciar?
-				input.form-control(type='radio')
-				input.form-control(type='radio')
+				input(type='radio')
+				p 	Si
+				br
+				input(type='radio')
+				p 	No
+				br
 				button.btn.btn-danger(type='submit') VOTAR
 				p.text-danger Ver resultados
 			.in-box
