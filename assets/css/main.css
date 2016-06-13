@@ -53,7 +53,7 @@
 }
 
 .text {
-  height: 100px;
+  height: 120px;
 }
 
 .foto {
@@ -92,8 +92,13 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
+.container-fluid {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
 .i {
-  padding: 2px 9px;
+  padding: 2px 5px;
   font-size: 18px;
 }
 
@@ -121,6 +126,18 @@ h1, h2, h3, h4, h5 {
   outline: 1px solid red;
 }
 
+.lateral-left {
+  position: fixed;
+  margin-top: -240px;
+  margin-left: 10px;
+}
+
+.lateral-right {
+  position: fixed;
+  margin-top: -240px;
+  margin-left: 1130px;
+}
+
 .header-top {
   background-color: #F2F2F2;
 }
@@ -137,6 +154,7 @@ h1, h2, h3, h4, h5 {
 .header-top .boton {
   background-color: #B20000;
   color: #fff;
+  font-size: 12px;
 }
 
 .header-top .buscar {
@@ -144,6 +162,7 @@ h1, h2, h3, h4, h5 {
   border: none;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
+  font-size: 10px;
 }
 
 .header-top .buscar i {
@@ -156,7 +175,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header .republica {
-  padding: 20px;
+  padding: 10px;
 }
 
 .header .republica .logo {
@@ -178,7 +197,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header .republica .lider {
-  padding: 22px 20px;
+  padding: 12px 20px;
   border: 1px solid gray;
   border-bottom: 2px solid #B20000;
   width: 98%;
@@ -201,16 +220,26 @@ h1, h2, h3, h4, h5 {
   padding-top: 15px;
 }
 
-.menu ul {
-  background-color: #B20000;
+.menu {
+  padding: 10px 0;
 }
 
 .menu a {
   color: #fff;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.menu .navbar-nav a {
+  padding: 10px;
 }
 
 .menu .navbar-custom {
   background-color: #B20000;
+}
+
+.menu .navbar {
+  margin-bottom: 0;
 }
 
 .menu i {
@@ -218,7 +247,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .temas {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .temas ul {
@@ -226,7 +255,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .temas ul li {
-  padding: 9px;
+  padding: 8px;
 }
 
 .temas ul li a {
@@ -247,12 +276,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .footer .cajita {
-  padding-top: 110px 0px;
+  padding-top: 80px;
   border-right: 2px solid white;
 }
 
-.footer img {
-  width: 80%;
+.footer .listas li {
+  font-size: 12px;
 }
 
 .pie-pagina {
@@ -263,8 +292,7 @@ h1, h2, h3, h4, h5 {
 
 .pie-pagina li {
   border-right: 1px solid gray;
-  font-size: 16px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .main-titulo {
