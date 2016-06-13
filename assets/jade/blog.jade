@@ -3,22 +3,14 @@ html
 		include ./ci/links.jade
 		include ./ci/mixin.jade
 	body
-		.container
-			mixin titulares('Blog', 'LO ULTIMO EN BLOG')
-			.row
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-				mixin allBlogeros
-
-
-
-
-
-
-
-
-
+		.container-fluid
+			.container
+				mixin titulares('Blog', 'LO ULTIMO EN BLOG')
+				.row
+					mixin allBlogeros
+					mixin allBlogeros
+					mixin allBlogeros
+					mixin allBlogeros
+					mixin allBlogeros
+					mixin allBlogeros
+					mixin allBlogeros
