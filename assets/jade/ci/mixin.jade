@@ -1,6 +1,85 @@
 //- MERLE
 //- SHEY SHEY
 
+mixin social_bar(imagen,texto,tema,icon)
+	.barra
+		ol.list-inline.list-unstyled
+			li
+				img(src='assets/image/social_sprite3.png')
+			li
+				img(src='assets/image/bullet.gif')
+			li
+				img(src=imagen)
+			li
+				small= texto
+			li
+				img(src='assets/image/bullet.gif')
+			li
+				p= tema
+			li
+				img(src='assets/image/bullet.gif')
+			li
+				i.text-danger(class!=attributes.class)
+
+mixin cinta_tittle1(texto)
+	.tittle.text-center
+		h4.font-cinta_red
+			a(href='#')
+				span=texto
+mixin cinta_tittle2(texto)
+	.tittle.text-center
+		h4.font-cinta_blue
+			a(href='#')
+				span=texto
+mixin grid_main(imagen,texto,formato)
+	.about_grid
+		img(src=imagen)
+		a(href='#')
+	.font-grid
+		h4=texto
+			span=formato
+
+mixin columnista(imagen,nombre,titulo)
+	.thumbnai.text-center
+		img(src=imagen)
+		.caption
+			p=nombre
+			strong 
+				h4=titulo
+mixin last_news(titulo,formato,imagen,texto)
+	small Hace 1 hora 12 mins
+			h3=titulo
+				span=formato
+	.row
+		.col-md-4
+			img.pull-left(src=imagen)
+		.col-md-6
+			p=texto
+			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
+mixin side_bar1(imagen, texto, formato)
+	.row
+		.col-md-4
+			img(src=imagen)
+		.col-md-8
+			a(href='')
+				h4=texto
+					span=formato
+mixin side_bar2(imagen,nombre,texto)
+	.row
+		.col-md-4
+			img(src=imagen)
+		.col-md-8
+			u=nombre
+			h5=texto
+mixin side_bar3(imagen,texto,link)
+	.row
+		.col-md-4
+			img(src=imagen)
+		.col-md-8
+			h4=texto
+			u.text-danger=link
+			
+
 //- ROSARIO
 
 //- MIXIN PARA ENCABEZADOS
@@ -78,3 +157,5 @@ mixin allPersonas_columna
 	mixin personas_columna('./assets/image/img-columnistas.jpg', 'Rosario Calle')
 	mixin personas_columna('./assets/image/img_grid_principal.jpg', 'Rosario Calle')				
 	mixin personas_columna('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')
+
+
