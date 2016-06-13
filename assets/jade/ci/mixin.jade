@@ -1,5 +1,6 @@
 //- MERLE
 //- SHEY SHEY
+
 mixin social_bar(imagen,texto,tema,icon)
 	.barra
 		ol.list-inline.list-unstyled
@@ -33,10 +34,9 @@ mixin cinta_tittle2(texto)
 mixin grid_main(imagen,texto,formato)
 	.about_grid
 		img(src=imagen)
-		a(href='#')
-	.font-grid
-		h4=texto
-			span=formato
+		.font-grid
+			h4=texto
+				span=formato
 
 mixin columnista(imagen,nombre,titulo)
 	.thumbnai.text-center
@@ -77,9 +77,6 @@ mixin side_bar3(imagen,texto,link)
 		.col-md-8
 			h4=texto
 			u.text-danger=link
-<<<<<<< HEAD
-//- //- ROSARIO
-=======
 			
 
 //- ROSARIO
@@ -160,4 +157,3 @@ mixin allPersonas_columna
 	mixin personas_columna('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')
 
 
->>>>>>> 3fe93c7b3e47d1ee8f238d50e3a0524dff5f860b

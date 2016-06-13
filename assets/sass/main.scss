@@ -2,6 +2,9 @@
 @import "mixin";
 @import "_variables.scss";
 
+h1, h2, h3, h4, h5{
+	font-weight: bold;
+}
 // HEADER
 // utilities
 .i{padding: 2px 9px; font-size: 18px;}
@@ -62,18 +65,13 @@
 		.caja-autor{
 			border: 1px solid gray;
 			margin-top: 30px;
-			img{position: relative; top:0px;}
+			img{position: relative; top:0px; float: right;}
 			.autor{
 				width: 80%;
 				display: inline-block;
 				padding-top: 15px;
 			}
 		}
-		// .foto{
-		// 	position: relative;
-		// 	top: 0px;
-		// 	float: right;
-		// }
 	}
 }
 .menu{
@@ -118,6 +116,9 @@
 
 // LATERALES
 // HOME
+.main-titulo{
+	font-size: 70px;
+}
 @mixin separadores {
   color:$blanco;
   font-family:'Oswald', sans-serif;
@@ -135,25 +136,33 @@
   position:absolute;
   font-family:'Helvetica',sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  color: $blanco;
   a{
     color:$blanco;
   }
 }
-.about-grid{
+.principal .font-grid h4{
+	font-size: 35px;
+}
+.about_grid{
   position:relative;
   img{
-    padding:20px;
-    vertical-align: middle;
+    width: 100%;
   }
 }
 .font-grid{
 @include font_tittle;
+margin-top: -110px;
+padding-left: 20px;
+ background: linear-gradient(to bottom, transparent 0, black 60%);
   h4{
-    font-size: 30px;
-    bottom:20%;
+    font-size: 25px;
   }
 } 
+.noticia{
+	border: 1px solid $plomo;
+	margin: 10px 0;
+}
 .columnistas{
   margin-top:20px;
   background-color:$plomo;
