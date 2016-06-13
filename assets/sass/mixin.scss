@@ -18,7 +18,11 @@
 	margin: 1%;
 }
 .p-azul{
-	color: $azul;
+	margin: 0;
+    font-family: "oswald",arial;
+    font-size: 15px;
+    color: $azul;
+    text-transform: uppercase;
 }
 .mg-b{
 	margin-bottom: 3.1%;
@@ -51,7 +55,7 @@
 	outline-offset: -5px;
 }
 .text{
-	height: 100px;
+	height: 120px;
 }
 
 .foto{

@@ -1,122 +1,147 @@
 
 @import "mixin";
 @import "_variables.scss";
-
-// ESTILOS GENERALES
-
-// HEADER
-.banner{
-	background-color: $plomo;
+h1, h2, h3, h4, h5{
+	font-weight: bold;
 }
+// HEADER
 // utilities
-.i{padding: 2px 9px; font-size: 18px;}
+.container-fluid{
+	margin-left: 140px;
+	margin-right: 140px;
+}
+.i{padding: 2px 5px; font-size: 18px;}
 .facebook{color:#2A65A1;}
 .twitter{color:#60BFDD;}
 .google{color:#CA4638;}
 .msg{color:#FFBF00;}
 .w{color:#FF8000;}
 *{outline: 1px solid red;}
+.lateral-left{
+	position: fixed;
+	margin-top:-240px;
+	margin-left: 10px;
+}
+.lateral-right{
+	position: fixed;
+	margin-top:-240px;
+	margin-left: 1130px;	
+}
 .header-top{
-  background-color: $plomo;
-  img{width: 100%;}
-  .top{padding-top: 15px; padding-bottom: 15px;}
-  .boton{
-    background-color:$rojo;
-    color: $blanco;
-  }
-  .buscar{
-    background: transparent;
-    border: none;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    i{
-      padding: 7px;
-    }
-  }
-  ul{
-    a{
-      color: $letra;
-      text-decoration: none;
-    }
-  }
+	background-color: $plomo;
+	img{width: 100%;}
+	.top{padding-top: 15px; padding-bottom: 15px;}
+	.boton{
+		background-color:$rojo;
+		color: $blanco;
+		font-size: 12px;
+	}
+	.buscar{
+		background: transparent;
+		border: none;
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+		font-size: 10px;
+		i{
+			padding: 7px;
+		}
+	}
+	ul{
+		a{
+			color: $letra;
+			text-decoration: none;
+		}
+	}
 }
 .header{
-  .republica{
-    padding: 20px;
-    .logo{
-      margin-top: 40px;
-      img{width: 85%;}
-    }
-    .titulo{
-      p{
-        background-color: $rojo;
-        color: $blanco;
-        width: 100px;
-        padding: 5px 15px;
-        margin: auto;
-        position: relative;
-        top: 15px;
-      }
-    }
-    .lider{
-      padding: 22px 20px;
-      border: 1px solid gray;
-      border-bottom: 2px solid $rojo;
-      width: 98%;
-    }
-    .caja-autor{
-      border: 1px solid gray;
-      margin-top: 30px;
-      img{position: relative; top:0px;}
-      .autor{
-        width: 80%;
-        display: inline-block;
-        padding-top: 15px;
-      }
-    }
-    .foto{
-      position: relative;
-      top: -80px;
-      float: right;
-    }
-  }
+	.republica{
+		padding: 10px;
+		.logo{
+			margin-top: 40px;
+			img{width: 85%;}
+		}
+		.titulo{
+			p{
+				background-color: $rojo;
+				color: $blanco;
+				width: 100px;
+				padding: 5px 15px;
+				margin: auto;
+				position: relative;
+				top: 15px;
+			}
+		}
+		.lider{
+			padding: 12px 20px;
+			border: 1px solid gray;
+			border-bottom: 2px solid $rojo;
+			width: 98%;
+		}
+		.caja-autor{
+			border: 1px solid gray;
+			margin-top: 30px;
+			img{position: relative; top:0px; float: right;}
+			.autor{
+				width: 80%;
+				display: inline-block;
+				padding-top: 15px;
+			}
+		}
+	}
 }
 .menu{
-  ul{
-    background-color: $rojo;
-  }
-  a{
-    color: $blanco;
-  }
+	padding: 10px 0;
+	a{
+		color: $blanco;
+		font-size: 12px;
+		padding: 5px;
+	}
+	.navbar-nav a{
+		padding: 10px;
+	}
+
+	.navbar-custom{
+		background-color: $rojo;
+	}
+	.navbar{
+		margin-bottom: 0;
+	}
+	i{color: white;}
 }
 .temas{
-  font-size: 16px;
-  ul{
-    background: $plomo
-    li{padding: 9px;
-      a{color: $letra}}
-    }
-  }
-  ul> :first-child{
-    background: $negro;
-    a{color:$blanco;}
-    
-  }
+	font-size: 13px;
+	ul{
+		background: $plomo;
+		li{padding: 8px;
+			a{color: $letra;}}
+		}
+	}
+	.list-temas> :first-child{
+		background: $negro;
+		a{color:$blanco;}
+		
+	}
 // FOOTER
 .footer{
-  background-color: $plomo;
-  padding: 10px 0;
-  .cajita{padding-top:110px 0px; border-right: 2px solid white;}
-  img{width:80%;} 
+	background-color: $plomo;
+	padding: 10px 0;
+	.cajita{padding-top:80px; border-right: 2px solid white;}
+	.listas{
+		li{font-size: 12px;}
+		}
 }
 .pie-pagina{
-  border-top: 2px solid $blanco;
-  background-color: $plomo;
-  padding: 10px;
-    li{border-right: 1px solid gray; font-size: 16px;}
-  }
+	border-top: 2px solid $blanco;
+	background-color: $plomo;
+	padding: 10px;
+		li{border-right: 1px solid gray; font-size: 12px;}
+	}
+
 // LATERALES
 // HOME
+.main-titulo{
+	font-size: 70px;
+}
 @mixin separadores {
   color:$blanco;
   font-family:'Oswald', sans-serif;
@@ -134,25 +159,33 @@
   position:absolute;
   font-family:'Helvetica',sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  color: $blanco;
   a{
     color:$blanco;
   }
 }
-.about-grid{
+.principal .font-grid h4{
+	font-size: 35px;
+}
+.about_grid{
   position:relative;
   img{
-    padding:20px;
-    vertical-align: middle;
+    width: 100%;
   }
 }
 .font-grid{
 @include font_tittle;
+margin-top: -110px;
+padding-left: 20px;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
   h4{
-    font-size: 30px;
-    bottom:20%;
+    font-size: 25px;
   }
 } 
+.noticia{
+	border: 1px solid $plomo;
+	margin: 10px 0;
+}
 .columnistas{
   margin-top:20px;
   background-color:$plomo;
@@ -163,11 +196,14 @@
   @include separadores;
   background-color:$rojo;
   margin-bottom: 20px;
+  margin-top: 10px;
+}
 }
 .font-cinta_blue{
   @include separadores;
   background-color:$azul;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .thumbnai{
   background-color:$plomo; 
@@ -211,7 +247,6 @@
 .aweita{
   border: 3px solid $plomo;
   margin-bottom:20px;
-  padding:10px 5px;
 }
 .tittle_blue{
   border-top:5px solid $azul;
@@ -223,6 +258,33 @@
   border-bottom:3px solid $plomo;
   margin-bottom: 20px;
 }
+.news{
+	border-bottom:3px solid $plomo;
+	margin-bottom:10px;
+}
+.color-font{
+    padding-bottom: 15px;
+    border-bottom: 4px solid $morado;
+    width: 40%;
+    span{
+    color:$morado
+    }
+}
+.font-side h4{
+	background-color:$blanco;
+	color:$negro;
+	margin-top: -110px;
+	position:absolute;
+	width:100%;
+	padding:20px;
+	opacity: 0.8;
+	text-align:center;
+}
+// .caricatura{
+//   border-top:5px solid $rojo;
+//   border-bottom:3px solid $plomo;
+// }
+>>>>>>> 5e3ff59ed73a316fa0506c2a53a225eda4930e46
 
 // CONTACTOS
 // COLUMNISTAS
