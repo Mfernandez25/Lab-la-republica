@@ -88,8 +88,178 @@
   border: none;
 }
 
-.banner {
+.i {
+  padding: 2px 9px;
+  font-size: 18px;
+}
+
+.facebook {
+  color: #2A65A1;
+}
+
+.twitter {
+  color: #60BFDD;
+}
+
+.google {
+  color: #CA4638;
+}
+
+.msg {
+  color: #FFBF00;
+}
+
+.w {
+  color: #FF8000;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.header-top {
   background-color: #F2F2F2;
+}
+
+.header-top img {
+  width: 100%;
+}
+
+.header-top .top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-top .boton {
+  background-color: #B20000;
+  color: #fff;
+}
+
+.header-top .buscar {
+  background: transparent;
+  border: none;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.header-top .buscar i {
+  padding: 7px;
+}
+
+.header-top ul a {
+  color: gray;
+  text-decoration: none;
+}
+
+.header .republica {
+  padding: 20px;
+}
+
+.header .republica .logo {
+  margin-top: 40px;
+}
+
+.header .republica .logo img {
+  width: 85%;
+}
+
+.header .republica .titulo p {
+  background-color: #B20000;
+  color: #fff;
+  width: 100px;
+  padding: 5px 15px;
+  margin: auto;
+  position: relative;
+  top: 15px;
+}
+
+.header .republica .lider {
+  padding: 22px 20px;
+  border: 1px solid gray;
+  border-bottom: 2px solid #B20000;
+  width: 98%;
+}
+
+.header .republica .caja-autor {
+  border: 1px solid gray;
+  margin-top: 30px;
+}
+
+.header .republica .caja-autor img {
+  position: relative;
+  top: 0px;
+}
+
+.header .republica .caja-autor .autor {
+  width: 80%;
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.menu ul {
+  background-color: #B20000;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu .navbar-custom {
+  background-color: #B20000;
+}
+
+.menu i {
+  color: white;
+}
+
+.temas {
+  font-size: 16px;
+}
+
+.temas ul {
+  background: #F2F2F2;
+}
+
+.temas ul li {
+  padding: 9px;
+}
+
+.temas ul li a {
+  color: gray;
+}
+
+.list-temas > :first-child {
+  background: #000;
+}
+
+.list-temas > :first-child a {
+  color: #fff;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  padding: 10px 0;
+}
+
+.footer .cajita {
+  padding-top: 110px 0px;
+  border-right: 2px solid white;
+}
+
+.footer img {
+  width: 80%;
+}
+
+.pie-pagina {
+  border-top: 2px solid #fff;
+  background-color: #F2F2F2;
+  padding: 10px;
+}
+
+.pie-pagina li {
+  border-right: 1px solid gray;
+  font-size: 16px;
+  font-size: 14px;
 }
 
 .about-grid {

@@ -2,12 +2,7 @@
 @import "mixin";
 @import "_variables.scss";
 
-// ESTILOS GENERALES
-
 // HEADER
-.banner{
-	background-color: $plomo;
-}
 // utilities
 .i{padding: 2px 9px; font-size: 18px;}
 .facebook{color:#2A65A1;}
@@ -17,104 +12,110 @@
 .w{color:#FF8000;}
 *{outline: 1px solid red;}
 .header-top{
-  background-color: $plomo;
-  img{width: 100%;}
-  .top{padding-top: 15px; padding-bottom: 15px;}
-  .boton{
-    background-color:$rojo;
-    color: $blanco;
-  }
-  .buscar{
-    background: transparent;
-    border: none;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    i{
-      padding: 7px;
-    }
-  }
-  ul{
-    a{
-      color: $letra;
-      text-decoration: none;
-    }
-  }
+	background-color: $plomo;
+	img{width: 100%;}
+	.top{padding-top: 15px; padding-bottom: 15px;}
+	.boton{
+		background-color:$rojo;
+		color: $blanco;
+	}
+	.buscar{
+		background: transparent;
+		border: none;
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+		i{
+			padding: 7px;
+		}
+	}
+	ul{
+		a{
+			color: $letra;
+			text-decoration: none;
+		}
+	}
 }
 .header{
-  .republica{
-    padding: 20px;
-    .logo{
-      margin-top: 40px;
-      img{width: 85%;}
-    }
-    .titulo{
-      p{
-        background-color: $rojo;
-        color: $blanco;
-        width: 100px;
-        padding: 5px 15px;
-        margin: auto;
-        position: relative;
-        top: 15px;
-      }
-    }
-    .lider{
-      padding: 22px 20px;
-      border: 1px solid gray;
-      border-bottom: 2px solid $rojo;
-      width: 98%;
-    }
-    .caja-autor{
-      border: 1px solid gray;
-      margin-top: 30px;
-      img{position: relative; top:0px;}
-      .autor{
-        width: 80%;
-        display: inline-block;
-        padding-top: 15px;
-      }
-    }
-    .foto{
-      position: relative;
-      top: -80px;
-      float: right;
-    }
-  }
+	.republica{
+		padding: 20px;
+		.logo{
+			margin-top: 40px;
+			img{width: 85%;}
+		}
+		.titulo{
+			p{
+				background-color: $rojo;
+				color: $blanco;
+				width: 100px;
+				padding: 5px 15px;
+				margin: auto;
+				position: relative;
+				top: 15px;
+			}
+		}
+		.lider{
+			padding: 22px 20px;
+			border: 1px solid gray;
+			border-bottom: 2px solid $rojo;
+			width: 98%;
+		}
+		.caja-autor{
+			border: 1px solid gray;
+			margin-top: 30px;
+			img{position: relative; top:0px;}
+			.autor{
+				width: 80%;
+				display: inline-block;
+				padding-top: 15px;
+			}
+		}
+		// .foto{
+		// 	position: relative;
+		// 	top: 0px;
+		// 	float: right;
+		// }
+	}
 }
 .menu{
-  ul{
-    background-color: $rojo;
-  }
-  a{
-    color: $blanco;
-  }
+	ul{
+		background-color: $rojo;
+	}
+	a{
+		color: $blanco;
+	}
+
+	.navbar-custom{
+		background-color: $rojo;
+	}
+	i{color: white;}
 }
 .temas{
-  font-size: 16px;
-  ul{
-    background: $plomo
-    li{padding: 9px;
-      a{color: $letra}}
-    }
-  }
-  ul> :first-child{
-    background: $negro;
-    a{color:$blanco;}
-    
-  }
+	font-size: 16px;
+	ul{
+		background: $plomo;
+		li{padding: 9px;
+			a{color: $letra;}}
+		}
+	}
+	.list-temas> :first-child{
+		background: $negro;
+		a{color:$blanco;}
+		
+	}
 // FOOTER
 .footer{
-  background-color: $plomo;
-  padding: 10px 0;
-  .cajita{padding-top:110px 0px; border-right: 2px solid white;}
-  img{width:80%;} 
+	background-color: $plomo;
+	padding: 10px 0;
+	.cajita{padding-top:110px 0px; border-right: 2px solid white;}
+	img{width:80%;}	
 }
 .pie-pagina{
-  border-top: 2px solid $blanco;
-  background-color: $plomo;
-  padding: 10px;
-    li{border-right: 1px solid gray; font-size: 16px;}
-  }
+	border-top: 2px solid $blanco;
+	background-color: $plomo;
+	padding: 10px;
+		li{border-right: 1px solid gray; font-size: 16px; font-size: 14px;}
+	}
+
 // LATERALES
 // HOME
 @mixin separadores {
