@@ -1,4 +1,8 @@
 /*CLASES ESPECIALES*/
+.container-fluid {
+  margin: 0 150px;
+}
+
 .mg-c {
   margin: 0;
 }
@@ -17,7 +21,11 @@
 }
 
 .p-azul {
-  color: #687888;
+  margin: 0;
+  font-family: "oswald",arial;
+  font-size: 15px;
+  color: #768596;
+  text-transform: uppercase;
 }
 
 .mg-b {
@@ -53,7 +61,7 @@
 }
 
 .text {
-  height: 100px;
+  height: 120px;
 }
 
 .foto {
@@ -61,6 +69,7 @@
   padding: 5% 2%;
   background: #F2F2F2;
   vertical-align: top;
+  background: linear-gradient(to bottom, white 0%, white 47%, #121212 100%);
 }
 
 .foto img {
@@ -71,7 +80,7 @@
 }
 
 .foto p:nth-child(3) {
-  color: #687888;
+  color: #768596;
 }
 
 /*MIXIN SASS PARA SECCION CULUMNISTAS*/

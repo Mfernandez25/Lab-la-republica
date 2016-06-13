@@ -1,5 +1,9 @@
 @import "_variables.scss";
 /*CLASES ESPECIALES*/
+.container-fluid{
+	margin: 0 150px;
+}
+
 .mg-c{
 	margin: 0;
 }
@@ -20,7 +24,6 @@
     color: $azul;
     text-transform: uppercase;
 }
-
 .mg-b{
 	margin-bottom: 3.1%;
 }
@@ -60,6 +63,7 @@
 	padding:5% 2%;
 	background: $plomo;
 	vertical-align: top;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(18,18,18,1) 100%);
 	img{
 		border:2px solid $blanco;
 		margin: 0 3%;
