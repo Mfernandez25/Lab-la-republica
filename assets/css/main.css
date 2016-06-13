@@ -88,6 +88,10 @@
   border: none;
 }
 
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
 .i {
   padding: 2px 9px;
   font-size: 18px;
@@ -188,6 +192,7 @@
 .header .republica .caja-autor img {
   position: relative;
   top: 0px;
+  float: right;
 }
 
 .header .republica .caja-autor .autor {
@@ -262,20 +267,30 @@
   font-size: 14px;
 }
 
-.about-grid {
+.main-titulo {
+  font-size: 70px;
+}
+
+.principal .font-grid h4 {
+  font-size: 35px;
+}
+
+.about_grid {
   position: relative;
 }
 
-.about-grid img {
-  padding: 20px;
-  vertical-align: middle;
+.about_grid img {
+  width: 100%;
 }
 
 .font-grid {
   position: absolute;
   font-family: 'Helvetica',sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  color: #fff;
+  margin-top: -110px;
+  padding-left: 20px;
+  background: linear-gradient(to bottom, transparent 0, black 60%);
 }
 
 .font-grid a {
@@ -283,8 +298,12 @@
 }
 
 .font-grid h4 {
-  font-size: 30px;
-  bottom: 20%;
+  font-size: 25px;
+}
+
+.noticia {
+  border: 1px solid #F2F2F2;
+  margin: 10px 0;
 }
 
 .columnistas {

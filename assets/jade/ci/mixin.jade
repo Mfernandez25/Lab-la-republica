@@ -34,10 +34,9 @@ mixin cinta_tittle2(texto)
 mixin grid_main(imagen,texto,formato)
 	.about_grid
 		img(src=imagen)
-		a(href='#')
-	.font-grid
-		h4=texto
-			span=formato
+		.font-grid
+			h4=texto
+				span=formato
 
 mixin columnista(imagen,nombre,titulo)
 	.thumbnai.text-center
