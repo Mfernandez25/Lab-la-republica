@@ -77,4 +77,87 @@ mixin side_bar3(imagen,texto,link)
 		.col-md-8
 			h4=texto
 			u.text-danger=link
+<<<<<<< HEAD
 //- //- ROSARIO
+=======
+			
+
+//- ROSARIO
+
+//- MIXIN PARA ENCABEZADOS
+mixin titulares(titulo, subtitulo)
+	strong
+		h1 #{titulo}
+	p.p-azul #{subtitulo}
+		i.i-blog.fa.fa-angle-double-down
+//- -------------------------MIXIN PARA CONTACTO
+mixin datos(datos_generales)
+	input.input-plomo(placeholder="#{datos_generales}") 
+	br
+//- mixin para inputs
+ 
+mixin opciones(...items)
+	form.col-sm-6.radio.mg-c
+		each item in items
+			input.mg-b(type='radio')
+			p= item
+mixin letras(...items)
+	ul.col-sm-6.text-right.pd-c
+		each item in items
+			li.list-inline.mg-b= item		
+//- mixin para lista de inputs tipo radio
+
+//- --------------------------MIXIN PARA BLOGS
+
+mixin blogeros(frase, letra , foto)
+	.blog.col-md-4.text-center
+		.text
+			small Lunes, 14 de Julio de 2015
+			strong
+				h3 #{frase}
+		.foto.text-left
+			img.pull-left(src='#{foto}')
+			strong
+				p BLOG
+			p #{letra}
+
+mixin allBlogeros
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/blog_avatar_01.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_02.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_03.jpg')
+
+//- --------------------------MIXIN PARA COLUMNISTAS
+			
+mixin allColumnistas
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/img_author_columnista.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/aside-personaje-thumb-01.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/img-columnistas.jpg')
+	mixin blogeros('El gol de la muerte', 'Libros', './assets/image/thumb-post-image.jpg')
+	mixin blogeros('Dios a muerto tengo las manos cubiertas de sangre', 'Ya los pasado ..pasado','./assets/image/blog_avatar_01.jpg')
+	mixin blogeros('¿Cual es tu queso favorito?', 'Decimas de cosas','./assets/image/blog_avatar_02.jpg')
+
+mixin menu-columnistas(...items)
+	div.menu-rojo
+		each item in items
+			button.btn-rojo.btn-danger= item
+
+mixin personas_columna(foto, letra)
+	.col-md-3
+		.foto.text-left.mg-t
+			img.pull-left(src='#{foto}')
+			strong
+				p BLOG
+			p #{letra}
+
+mixin allPersonas_columna
+	mixin personas_columna('./assets/image/aside-perfil-img-01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/aside-personaje-thumb-01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/blog_avatar_01.jpg', 'Rosario Calle')				
+	mixin personas_columna('./assets/image/blog_avatar_02.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/fotogaleria_col01_01.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/img-columnistas.jpg', 'Rosario Calle')
+	mixin personas_columna('./assets/image/img_grid_principal.jpg', 'Rosario Calle')				
+	mixin personas_columna('./assets/image/img_grid_principal2.jpg', 'Rosario Calle')
+
+
+>>>>>>> 3fe93c7b3e47d1ee8f238d50e3a0524dff5f860b
