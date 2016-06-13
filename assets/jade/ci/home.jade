@@ -5,12 +5,13 @@ include mixin.jade
 		h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
 block hero_section
 	center
-		+social_bar('Hace 12 minutos','POLÍTICA')
+		+social_bar('','Hace 12 minutos','POLÍTICA')
 .row
-	.col-md-5
+	.col-md-6
 		+grid_main('assets/image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral,')
-	.col-md-7
+	.col-md-6
 		+grid_main('assets/image/img_grid_secundario.jpg','Martín Belaunde Lossio: Empresas vinculadas al empresario contrataron por $S/.3 000 millones','|FOTOS')
+	.col-md-6
 		+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
 block content
 .columnistas
@@ -139,8 +140,8 @@ block noticias
 				img.ref_img(src='assets/image/img_pregunta.png')
 				h4 La pregunta de hoy
 				p  ¿Cree usted que la premier Ana Jara debe renunciar?
-					input.form-control(type='radio')
-					input.form-control(type='radio')
+				input.form-control(type='radio')
+				input.form-control(type='radio')
 				button.btn.btn-danger(type='submit') VOTAR
 				p.text-danger Ver resultados
 			.in-box
@@ -183,7 +184,7 @@ block noticias
 				img.ref_img(src='assets/image/img_reporteroc.png')
 				h4 Reporte ciudadano
 				img(src='assets/image/img_sd_reporteroc.jpg')
-				h6 Estacionamiento indebido
+				h5 Estacionamiento indebido
 				p ¿Está permitido qque dejen sua uto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
 				button.btn.btn-danger(type='submit') ENVIAR FOTOS
 				p.text-danger Más fotos
