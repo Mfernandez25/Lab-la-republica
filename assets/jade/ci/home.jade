@@ -15,7 +15,8 @@ include mixin.jade
 				+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
 		block content
 		.columnistas
-			+cinta_tittle1('COLUMNISTAS')
+			a.referencia(href='columnistas.html')
+				+cinta_tittle1('COLUMNISTAS')
 		.row
 			.col-md-12
 				.columlist
@@ -63,8 +64,7 @@ include mixin.jade
 		block noticias
 		.row
 			.col-md-8
-				h5 ULTIMAS NOTICIAS
-					img(src='assets/image/double-arrow-bottom.png')
+				mixin titulares('', 'ÚLTIMAS NOTICIAS')
 
 				+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
 				+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
@@ -107,12 +107,16 @@ include mixin.jade
 						input.form-control(type='text')
 						button.btn.btn-danger(type='submit') SUSCRIBIRSE
 				.aweita
-					img(src='assets/image/logo_aweita.jpg')
+					center
+						img(src='assets/image/logo_aweita.jpg')
 					+side_bar1('assets/image/img_aweita.jpg','Juan Román Riquelme, el adiós al"Último 10" de Argentina')
 					+side_bar1('assets/image/img_aweita.jpg','Lewia Carroll: un día como hoy nació el autor de "Alicia en el')
 					+side_bar1('assets/image/img_aweita.jpg','Juan Román Riquelme, el adiós al"Último 10" de Argentina')
 					+side_bar1('assets/image/img_aweita.jpg','Gameplay de "Dead Kings", el descargable premium de "Assassin´s')
-					u.text-center.font-purple Más en Aweita.pe
+					center
+						.color-font
+							p.text-center Más en 
+								span Aweita.pe
 				.tittle_blue
 					+cinta_tittle2('FOTOS DESTACADAS')
 					img.img-responsive(src='assets/image/img_fotodes_prominent.jpg')
@@ -122,10 +126,9 @@ include mixin.jade
 					+side_bar1('assets/image/img_fotodes.jpg','Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open','|FOTOS')
 				.tittle_blue
 					+cinta_tittle2('ESPECIALES')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','Regimen laboral juvenil')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','COP20')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','Concentración de Medios')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','Especies peruanas en peligro de extinción')
+					+side_bar4('assets/image/img_especiales_aside.jpg','COP20')
+					+side_bar4('assets/image/img_especiales_aside.jpg','Concentración de Medios')
+					+side_bar4('assets/image/img_especiales_aside.jpg','Especies peruanas en peligro de extinción')
 				.tittle_red
 					+cinta_tittle1('CARLINCATURA DEL DÍA')
 					center
@@ -133,7 +136,8 @@ include mixin.jade
 						img.img-responsive(src='assets/image/img_carlincatura_sd.jpg')
 						p.text-danger Todas las Carlincaturas
 				.tittle_blue
-					+cinta_tittle2('NUESTROS BLOGUEROS')
+					a(href='blog.html')
+						+cinta_tittle2('NUESTROS BLOGUEROS')
 					+side_bar2('assets/image/img_blogueros.jpg','Augusto álvarez Rodrich','Charlie Hebdo, historia que no debe repetirse')
 					+side_bar2('assets/image/img_blogueros.jpg','Augusto álvarez Rodrich','El único pulpin es Humala')
 					+side_bar2('assets/image/img_blogueros.jpg','Augusto álvarez Rodrich','Dios ha muerto...tengo las manos')
@@ -151,16 +155,21 @@ include mixin.jade
 					+side_bar3('assets/image/img_impreso_sd.jpg','El Ojo de Oblitas','Domingo')
 				.tittle_blue
 					+cinta_tittle2('INFOGRAFÍAS')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','Histórico cierre de frontera')
-					+side_bar2('assets/image/img_especiales_aside.jpg','','Evolución de la pobreza e indigencia en América Latina')
+					+side_bar4('assets/image/img_especiales_aside.jpg','Histórico cierre de frontera')
+					+side_bar4('assets/image/img_especiales_aside.jpg','Evolución de la pobreza e indigencia en América Latina')
 				.interactive_box
 					.in-box
 						img.ref_img(src='assets/image/img_pregunta.png')
 						h4 La pregunta de hoy
 						p  ¿Cree usted que la premier Ana Jara debe renunciar?
-						input.form-control(type='radio')
-						input.form-control(type='radio')
+						.radio
+							label.radio-inline
+								input(type='radio') 
+								br 
+								input(type='radio')
+								br
 						button.btn.btn-danger(type='submit') VOTAR
+						br
 						p.text-danger Ver resultados
 					.in-box
 						h4 La pregunta de ayer

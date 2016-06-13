@@ -1,7 +1,6 @@
 
 @import "mixin";
 @import "_variables.scss";
-
 h1, h2, h3, h4, h5{
 	font-weight: bold;
 }
@@ -178,7 +177,7 @@ h1, h2, h3, h4, h5{
 @include font_tittle;
 margin-top: -110px;
 padding-left: 20px;
- background: linear-gradient(to bottom, transparent 0, black 60%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
   h4{
     font-size: 25px;
   }
@@ -197,11 +196,14 @@ padding-left: 20px;
   @include separadores;
   background-color:$rojo;
   margin-bottom: 20px;
+  margin-top: 10px;
+}
 }
 .font-cinta_blue{
   @include separadores;
   background-color:$azul;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 .thumbnai{
   background-color:$plomo; 
@@ -245,7 +247,6 @@ padding-left: 20px;
 .aweita{
   border: 3px solid $plomo;
   margin-bottom:20px;
-  padding:10px 5px;
 }
 .tittle_blue{
   border-top:5px solid $azul;
@@ -257,9 +258,28 @@ padding-left: 20px;
   border-bottom:3px solid $plomo;
   margin-bottom: 20px;
 }
-// .font-side{
-// // AQUI FALTA EL ESTiLO PARA LAS CINTAS BLANCAS 
-// }
+.news{
+	border-bottom:3px solid $plomo;
+	margin-bottom:10px;
+}
+.color-font{
+    padding-bottom: 15px;
+    border-bottom: 4px solid $morado;
+    width: 40%;
+    span{
+    color:$morado
+    }
+}
+.font-side h4{
+	background-color:$blanco;
+	color:$negro;
+	margin-top: -110px;
+	position:absolute;
+	width:100%;
+	padding:20px;
+	opacity: 0.8;
+	text-align:center;
+}
 // .caricatura{
 //   border-top:5px solid $rojo;
 //   border-bottom:3px solid $plomo;
