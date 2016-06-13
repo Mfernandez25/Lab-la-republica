@@ -24,13 +24,11 @@ mixin social_bar(imagen,texto,tema,icon)
 mixin cinta_tittle1(texto)
 	.tittle.text-center
 		h4.font-cinta_red
-			a(href='#')
-				span=texto
+			span=texto
 mixin cinta_tittle2(texto)
 	.tittle.text-center
 		h4.font-cinta_blue
-			a(href='#')
-				span=texto
+			span=texto
 mixin grid_main(imagen,texto,formato)
 	.about_grid
 		img(src=imagen)
@@ -46,13 +44,14 @@ mixin columnista(imagen,nombre,titulo)
 			strong 
 				h4=titulo
 mixin last_news(titulo,formato,imagen,texto)
-	small Hace 1 hora 12 mins
-			h3=titulo
-				span=formato
-	.row
+	.news
+		small Hace 1 hora 12 mins
+				h3=titulo
+					span=formato
+	.row.news
 		.col-md-4
 			img.pull-left(src=imagen)
-		.col-md-6
+		.col-md-8
 			p=texto
 			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
 mixin side_bar1(imagen, texto, formato)
@@ -77,7 +76,12 @@ mixin side_bar3(imagen,texto,link)
 		.col-md-8
 			h4=texto
 			u.text-danger=link
-			
+mixin side_bar4(imagen,texto,formato)
+	.about_grid
+		img(src=imagen)
+		.font-side
+			h4=texto
+				span=formato			
 
 //- ROSARIO
 
