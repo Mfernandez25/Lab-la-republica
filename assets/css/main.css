@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*CLASES ESPECIALES*/
 .mg-c {
   margin: 0;
@@ -87,7 +86,8 @@
   padding: 0 2%;
   background: #B20000;
   border: none;
-=======
+}
+
 .banner {
   background-color: #F2F2F2;
 }
@@ -221,5 +221,4 @@
   border-top: 5px solid #B20000;
   border-bottom: 3px solid #F2F2F2;
   margin-bottom: 20px;
->>>>>>> c5dc74bdd664097246ef211f04e38af1cbde805d
 }
