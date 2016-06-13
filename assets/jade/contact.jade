@@ -3,7 +3,8 @@ html
 		include ./ci/links.jade
 		include ./ci/mixin.jade
 	body
-		.container
+		include ./ci/header.jade
+		.container-fluid
 			.row
 				.contacto
 					strong.text-center
@@ -28,6 +29,7 @@ html
 					textarea.input-mensaje.mg-b(type="text" placeholder="Mensaje")
 					br
 					img.mg-b(src='./assets/image/contacto_submit_btn.jpg')
+		include ./ci/footer.jade
 
 
 
