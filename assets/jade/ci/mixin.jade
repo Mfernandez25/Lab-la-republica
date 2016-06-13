@@ -38,12 +38,11 @@ mixin grid_main(imagen,texto,formato)
 					span=formato
 
 mixin columnista(imagen,nombre,titulo)
-	.thumbnai.text-center.col-md-2
+	.thumbnai.text-center.col-sm-2
 		img(src=imagen)
-		.caption
-			p=nombre
-			strong 
-				h4=titulo
+		p=nombre
+		strong 
+			h4=titulo
 mixin last_news(titulo,formato,imagen,texto)
 	.news
 		small Hace 1 hora 12 mins

@@ -69,7 +69,6 @@
   padding: 5% 2%;
   background: #F2F2F2;
   vertical-align: top;
-  background: linear-gradient(to bottom, white 0%, white 47%, #121212 100%);
 }
 
 .foto img {
@@ -330,7 +329,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero {
-  margin-bottom: 80px;
+  margin-bottom: 3%;
 }
 
 .sec {
@@ -420,13 +419,6 @@ h1, h2, h3, h4, h5 {
 
 .caption {
   height: 30px;
-}
-
-.thumbnai {
-  background-color: #F2F2F2;
-  display: inline-block;
-  width: 15%;
-  height: auto;
 }
 
 .thumbnai img {
