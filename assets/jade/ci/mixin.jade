@@ -32,12 +32,13 @@ mixin cinta_tittle2(texto)
 mixin grid_main(imagen,texto,formato)
 	.about_grid
 		img(src=imagen)
-		.font-grid
-			h4=texto
-				span=formato
+		.col-md-12
+			.font-grid
+				h4=texto
+					span=formato
 
 mixin columnista(imagen,nombre,titulo)
-	.thumbnai.text-center
+	.thumbnai.text-center.col-md-2
 		img(src=imagen)
 		.caption
 			p=nombre
@@ -56,11 +57,11 @@ mixin last_news(titulo,formato,imagen,texto)
 			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
 mixin side_bar1(imagen, texto, formato)
 	.row
-		.col-md-4
+		.col-md-5
 			img(src=imagen)
-		.col-md-8
+		.col-md-7
 			a(href='')
-				h4=texto
+				h5=texto
 					span=formato
 mixin side_bar2(imagen,nombre,texto)
 	.row
@@ -71,10 +72,10 @@ mixin side_bar2(imagen,nombre,texto)
 			h5=texto
 mixin side_bar3(imagen,texto,link)
 	.row
-		.col-md-4
+		.col-md-5
 			img(src=imagen)
-		.col-md-8
-			h4=texto
+		.col-md-7
+			h5=texto
 			u.text-danger=link
 mixin side_bar4(imagen,texto,formato)
 	.about_grid

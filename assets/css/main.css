@@ -300,19 +300,36 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-titulo {
-  font-size: 70px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .main-titulo {
+    font-size: 30px;
+  }
 }
 
 .principal .font-grid h4 {
   font-size: 35px;
 }
 
-.about_grid {
-  position: relative;
+@media screen and (max-width: 750px) {
+  .principal .font-grid h4 {
+    font-size: 20px;
+  }
 }
 
 .about_grid img {
   width: 100%;
+  height: 100%;
+}
+
+.hero {
+  margin-bottom: 80px;
+}
+
+.sec {
+  margin: 5px;
 }
 
 .font-grid {
@@ -320,8 +337,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Helvetica',sans-serif;
   font-weight: bold;
   color: #fff;
-  margin-top: -110px;
-  padding-left: 20px;
+  margin-top: -200px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
 }
 
@@ -330,7 +346,24 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-grid h4 {
-  font-size: 25px;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 750px) {
+  .font-grid {
+    font-size: 8px;
+    margin-top: -130px;
+  }
+}
+
+.sec .font-grid {
+  margin-top: -150px;
+}
+
+@media screen and (max-width: 750px) {
+  .sec .font-grid {
+    margin-top: -90px;
+  }
 }
 
 .noticia {
@@ -354,6 +387,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 20px;
   background-color: #B20000;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .font-cinta_red a {
@@ -377,6 +411,10 @@ h1, h2, h3, h4, h5 {
 .font-cinta_blue a {
   color: #fff;
   padding: 10px;
+}
+
+.caption {
+  height: 30px;
 }
 
 .thumbnai {
