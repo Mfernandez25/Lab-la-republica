@@ -32,16 +32,15 @@ mixin cinta_tittle2(texto)
 mixin grid_main(imagen,texto,formato)
 	.about_grid
 		img(src=imagen)
-		.col-md-12
-			.font-grid
-				h4=texto
-					span=formato
+	.font-grid
+		h4=texto
+			span=formato
 
 mixin columnista(imagen,nombre,titulo)
 	.thumbnai.text-center.col-md-2
 		img(src=imagen)
 		.caption
-			p=nombre
+			// p=nombre
 			strong 
 				h4=titulo
 mixin last_news(titulo,formato,imagen,texto)

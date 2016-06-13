@@ -208,6 +208,14 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
 .noticia{
 	border: 1px solid $plomo;
 	margin: 10px 0;
+	.font-grid{
+	margin-top: -10px;
+	font-size: 23px;
+	width: 100%;
+	@media screen and(max-width:750px){
+		margin-top: -90px;
+	}
+	}
 }
 .columnistas{
   margin-top:20px;
@@ -305,6 +313,7 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
 	opacity: 0.8;
 	text-align:center;
 }
+
 // .caricatura{
 //   border-top:5px solid $rojo;
 //   border-bottom:3px solid $plomo;
