@@ -1,4 +1,8 @@
 /*CLASES ESPECIALES*/
+.container-fluid {
+  margin: 0 150px;
+}
+
 .mg-c {
   margin: 0;
 }
@@ -50,7 +54,7 @@
 }
 
 /*MIXIN SASS PARA SECCION BLOG*/
-.blog {
+.blog, .mercado {
   padding: 1%;
   outline: 2px solid #F2F2F2;
   outline-offset: -5px;
@@ -126,10 +130,6 @@ h1, h2, h3, h4, h5 {
   color: #FF8000;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .lateral-left {
   position: fixed;
   margin-top: -240px;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5 {
 .lateral-right {
   position: fixed;
   margin-top: -240px;
-  margin-left: 1130px;
+  margin-left: 90%;
 }
 
 .header-top {
@@ -384,14 +384,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .columnistas {
-  margin-top: 20px;
   background-color: #F2F2F2;
   border-top: 5px solid #B20000;
 }
 
 .mercado {
-  border: 1px solid gray;
-  padding: 15px 0px;
+  padding: 4% 0;
 }
 
 .mercado .text-danger {
@@ -401,10 +399,12 @@ h1, h2, h3, h4, h5 {
 .mercado .imagen {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 10%);
   background-image: url("../../assets/image/img_especiales.jpg");
-  background-size: cover;
+  background-size: container;
   background-repeat: no-repeat;
   height: 200px;
+  width: 90%;
   color: #fff;
+  margin: 0 auto;
 }
 
 .mercado .imagen p {
@@ -412,6 +412,10 @@ h1, h2, h3, h4, h5 {
   padding-left: 5px;
   font-size: 1em;
   margin-bottom: 5%;
+}
+
+.news {
+  margin-bottom: 20%;
 }
 
 .news img {
@@ -522,11 +526,6 @@ h1, h2, h3, h4, h5 {
   border-top: 5px solid #B20000;
   border-bottom: 3px solid #F2F2F2;
   margin-bottom: 20px;
-}
-
-.news {
-  border-bottom: 3px solid #F2F2F2;
-  margin-bottom: 10px;
 }
 
 .color-font {
