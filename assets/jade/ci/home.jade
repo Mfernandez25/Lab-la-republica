@@ -41,68 +41,22 @@ include mixin.jade
 				a(href='#')
 					i.fa.fa-circle
 	.row
-		.col-md-4
-			.noticia.text-center
-				h5.text-danger Mercado de Pases 2016
-				+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
-				br
-				p todo sobre mercado de pases 2016
-			.noticia.text-center
-				h5.text-danger Mercado de Pases 2016
-				+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
-				br
-				p todo sobre mercado de pases 2016
-		.col-md-4
-			.noticia.text-center
-				h5.text-danger Mercado de Pases 2016
-				+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
-				br
-				p todo sobre mercado de pases 2016
-			.noticia.text-center
-				h5.text-danger Mercado de Pases 2016
-				+grid_main('assets/image/img_grid_secundario.jpg','Sub 20: Perú vs. Paraguay: bicolor empató 1-1 y pasó al hexagonal final del Sudamericano','|VIDEO')
-				br
-				p todo sobre mercado de pases 2016
-		.col-md-4.text-center
+		.col-md-8
+				mixin noticia("Mercado de Pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos.", "Todo sobre mercado de pases 2015.")
+				mixin noticia("Mercado de Pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos.", "Todo sobre mercado de pases 2015.")
+				mixin noticia("Mercado de Pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos.", "Todo sobre mercado de pases 2015.")
+				mixin noticia("Mercado de Pases 2015","Mercado de pases 2015: altas, bajas y rumores de los equipos peruanos.", "Todo sobre mercado de pases 2015.")
+		.col-md-4.text-center.banners
 			img(src='assets/image/banner-aside-home.jpg')
 	block noticias
 	.row
 		.col-md-8
 			mixin titulares('', 'ÚLTIMAS NOTICIAS')
-
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Emma Watson protagonizará La Bella y la Bestia','|VIDEO','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Roque benavides respalda proyecto Tia Maria y espera que Conga se socialice','','assets/image/img_news.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventtura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...')
-			+last_news('Youtube: hombre finge ahogarse y su perro lo rescata','|FOTOS','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
-			+last_news('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y si estará contra el Atlético Madrid','','assets/image/img_news.jpg','Después de la pésima actitud de Cristiano Ronaldo, al eagedir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la ...')
+			mixin all-last-news
+			mixin all-last-news
+			mixin all-last-news
+			mixin all-last-news
+			
 		.col-md-4
 			.interactive_box
 				.suscrib
