@@ -426,6 +426,12 @@ h1, h2, h3, h4, h5 {
   font-size: 14px;
 }
 
+@media screen and (max-width: 750px) {
+  .news {
+    margin-bottom: 0;
+  }
+}
+
 .banners img {
   width: 100%;
 }
@@ -513,7 +519,7 @@ h1, h2, h3, h4, h5 {
 
 .aweita {
   border: 3px solid #F2F2F2;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .tittle_blue {
@@ -547,4 +553,29 @@ h1, h2, h3, h4, h5 {
   padding: 20px;
   opacity: 0.8;
   text-align: center;
+}
+
+.siders {
+  padding: 2%;
+}
+
+@media screen and (max-width: 750px) {
+  .siders {
+    text-align: center;
+  }
+}
+
+.siders img {
+  border: 3px solid gray;
+  margin: 2%;
+}
+
+.siders .col-md-9 {
+  padding-left: 20%;
+}
+
+@media screen and (max-width: 750px) {
+  .siders {
+    margin: 0 auto;
+  }
 }

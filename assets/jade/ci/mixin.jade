@@ -5,19 +5,19 @@ mixin social_bar(imagen,texto,tema,icon)
 	.barra
 		ol.list-inline.list-unstyled
 			li
-				img.img-responsive(src='assets/image/social_sprite3.png')
+				img(src='assets/image/social_sprite3.png')
 			li
-				img.img-responsive(src='assets/image/bullet.gif')
+				img(src='assets/image/bullet.gif')
 			li
-				img.img-responsive(src=imagen)
+				img(src=imagen)
 			li
 				small= texto
 			li
-				img.img-responsive(src='assets/image/bullet.gif')
+				img(src='assets/image/bullet.gif')
 			li
 				small= tema
 			li
-				img.img-responsive(src='assets/image/bullet.gif')
+				img(src='assets/image/bullet.gif')
 			li
 				i.text-danger(class!=attributes.class)
 
@@ -43,7 +43,7 @@ mixin columnista(imagen,nombre,titulo)
 		strong 
 			h4=titulo
 mixin noticia(titulo,texto,descripcion)
-	.mercado.col-md-6.text-center
+	.mercado.col-sm-6.text-center
 		p.text-danger=titulo
 		.imagen
 			strong
@@ -51,8 +51,11 @@ mixin noticia(titulo,texto,descripcion)
 		p=descripcion
 
 mixin all-last-news
-	mixin last_news('Emma Watson protagonizará La Bella y la Bestia','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')mixin last_news('Emma Watson protagonizará La Bella y la Bestia','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')mixin last_news('Emma Watson protagonizará La Bella y la Bestia','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')mixin last_news('Emma Watson protagonizará La Bella y la Bestia','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
-	
+	mixin last_news('Emma Watson protagonizará La Bella y la Bestia','assets/image/img_news.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
+	mixin last_news('Roque Benavides respalda proyecto Tia Maria y espera que Conga se spcialize','assets/image/thumb-post-image.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
+	mixin last_news('YOU TUBE Hombre finge que se ahora y su perro lo rescata','assets/image/img_sd_mascota.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
+	mixin last_news('REAL MADRID: Cristiano Ronaldo fue sancionado con dos partidos y si jugara contra Atletico del Madrid','assets/image/img_aweita.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de La Bella y la Bestia en la versión de carne y hueso.')
+
 mixin last_news(titulo,imagen,texto)
 	.news
 		small Hace 1 hora 12 mins
@@ -64,13 +67,12 @@ mixin last_news(titulo,imagen,texto)
 			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
 				
 mixin side_bar1(imagen, texto, formato)
-	.row
+	.row.siders
 		.col-md-3
 			img(src=imagen)
 		.col-md-9
-			a(href='')
-				h3=texto
-					span=formato
+			small=texto
+				span=formato
 mixin side_bar2(imagen,nombre,texto)
 	.row
 		.col-md-4
