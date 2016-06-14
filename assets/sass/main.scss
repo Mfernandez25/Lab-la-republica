@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5{
 .lateral-right{
 	position: fixed;
 	margin-top:-240px;
-	margin-left: 1130px;	
+	margin-left: 1220px;	
 }
 .header-top{
 	background-color: $plomo;
@@ -167,43 +167,20 @@ h1, h2, h3, h4, h5{
     color:$blanco;
   }
 }
-.principal .font-grid h4{
-	font-size: 35px;
-	@media screen and(max-width:750px){
-		font-size: 20px;
-	}
-}
+
 .about_grid{
-  // position:relative;
+	margin-top:10px;
+	color:$blanco;
   img{
     width: 100%;
     height: 100%;
   }
+ .texto{
+	margin-top:-100px;
+  }
 }
 .hero{
 	margin-bottom:3%;
-}
-.sec{
-	margin: 5px;
-}
-.font-grid{
-@include font_tittle;
-margin-top: -200px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
-  h4{
-    font-size: 2em;
-  }
-  @media screen and(max-width:750px){
-		font-size: 8px;
-		margin-top: -130px;
-	}
-
-}
-.sec .font-grid{
-	margin-top: -150px;
-	@media screen and(max-width:750px){
-		margin-top: -90px;
-	}
 }
 .noticia{
 	border: 1px solid $plomo;
@@ -246,7 +223,14 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
 	img{width: 100%;}
 	p{font-size: 14px;}
 }
+.revista-aweita{
+	border: 3px solid $plomo;
+	margin: 10px 0;
+	img{
+		width: 100%;
+	}
 
+}
 .banners{img{width: 100%;}}
 .font-cinta_red{
   @include separadores;
@@ -298,15 +282,7 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
     margin: -40px 10px 20px 139px;
     text-align: center;
 }
-.aweita{
-  border: 3px solid $plomo;
-  margin-bottom:20px;
-}
-.tittle_blue{
-  border-top:5px solid $azul;
-  border-bottom:3px solid $plomo;
-  margin-bottom: 20px;
-}
+
 .tittle_red{
   border-top:5px solid $rojo;
   border-bottom:3px solid $plomo;
@@ -334,12 +310,3 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black 60%);
 	opacity: 0.8;
 	text-align:center;
 }
-
-// .caricatura{
-//   border-top:5px solid $rojo;
-//   border-bottom:3px solid $plomo;
-// }
-
-// CONTACTOS
-// COLUMNISTAS
-// BLOG
