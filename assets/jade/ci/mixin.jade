@@ -2,19 +2,19 @@ mixin social_bar(imagen,texto,tema,icon)
 	.barra
 		ol.list-inline.list-unstyled
 			li
-				img(src='assets/image/social_sprite3.png')
+				img.img-responsive(src='assets/image/social_sprite3.png')
 			li
-				img(src='assets/image/bullet.gif')
+				img.img-responsive(src='assets/image/bullet.gif')
 			li
-				img(src=imagen)
+				img.img-responsive(src=imagen)
 			li
 				small= texto
 			li
-				img(src='assets/image/bullet.gif')
+				img.img-responsive(src='assets/image/bullet.gif')
 			li
 				small= tema
 			li
-				img(src='assets/image/bullet.gif')
+				img.img-responsive(src='assets/image/bullet.gif')
 			li
 				i.text-danger(class!=attributes.class)
 
@@ -57,8 +57,8 @@ mixin last_news(titulo,imagen,texto)
 		.col-md-4
 			img(src=imagen)
 		.col-md-8
-				p=texto
-				+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
+			p=texto
+			+social_bar('assets/image/ico_comment.png','10','ESPECTÁCULOS')(class="fa fa-youtube-play")
 				
 mixin side_bar1(imagen, texto, formato)
 	.row.revista-aweita
@@ -87,9 +87,6 @@ mixin side_bar4(imagen,texto,formato)
 		.font-side
 			h4=texto
 				span=formato
-
-//- ROSARIO
-
 //- MIXIN PARA ENCABEZADOS
 mixin titulares(titulo, subtitulo)
 	strong
