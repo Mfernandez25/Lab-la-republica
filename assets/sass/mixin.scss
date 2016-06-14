@@ -31,11 +31,16 @@
 
 .input-general{
 	width: 650px;
-	background: $plomo;	
+	background: $plomo;
+	@media screen and(max-width:750px){
+	width: 100%;	
+	}
+	
 }
 .input-plomo{
 	@extend .input-general;
 	margin: 1%;
+	
 }
 .input-mensaje{
 	@extend .input-general;

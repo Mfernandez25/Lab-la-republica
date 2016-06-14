@@ -38,6 +38,12 @@
   background: #F2F2F2;
 }
 
+@media screen and (max-width: 750px) {
+  .input-general, .input-plomo, .input-mensaje {
+    width: 100%;
+  }
+}
+
 .input-plomo {
   margin: 1%;
 }
